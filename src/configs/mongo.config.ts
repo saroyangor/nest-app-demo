@@ -21,7 +21,4 @@ const getMongoString = (configService: ConfigService): string =>
 	configService.get('MONGO_AUTHDATABASE') +
 	'?directConnection=true';
 
-const getMongoOptions = () => ({
-	useNewUrlParser: true,
-	useUnifiedTopology: true,
-});
+const getMongoOptions = () => ({ });
